@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "comfyui-api"
+version = "0.1.0"
+description = "comfyui api page"
+authors = ["tae-uk403 <ntw0403@naver.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+fastapi = "^0.115.6"
+gunicorn = "^23.0.0"
+uvicorn = "^0.32.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

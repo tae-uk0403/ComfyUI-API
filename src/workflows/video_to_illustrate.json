@@ -1,0 +1,81 @@
+{
+  "1": {
+    "inputs": {
+      "video": "video/화면 기록 2024-08-19 오후 4.02.04.mp4",
+      "video_segment_frames": -1,
+      "transition_frames": 0,
+      "upload-preview": null,
+      "upload file": "video",
+      "$$comfy_animation_preview": {
+        "height": 326
+      }
+    },
+    "class_type": "LoadVideoAndSegment_",
+    "_meta": {
+      "title": "Load Video And Segment"
+    }
+  },
+  "2": {
+    "inputs": {
+      "index": 0,
+      "scenes_video": [
+        "6",
+        0
+      ]
+    },
+    "class_type": "ScenesNode_",
+    "_meta": {
+      "title": "Select Scene"
+    }
+  },
+  "6": {
+    "inputs": {
+      "driving_video_reverse_align": true,
+      "source_image": [
+        "33",
+        0
+      ],
+      "driving_video": [
+        "1",
+        0
+      ]
+    },
+    "class_type": "LivePortraitNode",
+    "_meta": {
+      "title": "Live Portrait"
+    }
+  },
+  "22": {
+    "inputs": {
+      "frame_rate": [
+        "1",
+        3
+      ],
+      "loop_count": 0,
+      "filename_prefix": "Comfyui",
+      "format": "video/h264-mp4",
+      "pingpong": false,
+      "save_image": true,
+      "metadata": false,
+      "vhs_gif_preview__0": "/view?filename=Comfyui_00002_.mp4&subfolder=&type=temp&format=video%2Fh264-mp4",
+      "image_batch": [
+        "2",
+        0
+      ]
+    },
+    "class_type": "VideoCombine_Adv",
+    "_meta": {
+      "title": "Video Combine"
+    }
+  },
+  "33": {
+    "inputs": {
+      "image": "스크린샷 2024-08-19 오후 4.06.32.png",
+      "upload": "image"
+    },
+    "class_type": "LoadImage",
+    "_meta": {
+      "title": "Load Image"
+    }
+  }
+}
