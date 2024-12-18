@@ -136,7 +136,6 @@ class ComfyUIClient:
                     data = message["data"]
                     if data["node"] is None and data["prompt_id"] == prompt_id:
                         break  # 실행 완료
-
             else:
                 continue  # 미리보기는 이진 데이터
 

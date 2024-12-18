@@ -368,10 +368,10 @@ def flux_lora(task_folder_path, lora_name, generate_prompt):
 
     # 최종 이미지 저장
     final_path = task_folder_path / "output.png"
-    print("final_path is", final_path)
-    print("images are : ", images)
-    if images:
-        image = Image.open(io.BytesIO(images))
-        image.save(final_path, "PNG")
+
+    for node_id in images:
+        for image_data in images[node_id]:
+            image = Image.open(io.BytesIO(image_data))
+        image.save(final_path, "png")
 
     return final_path
